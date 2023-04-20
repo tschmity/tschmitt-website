@@ -1,0 +1,1269 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	    <title>Unreal Engine Challenge</title>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	    <link rel="stylesheet" href="assets/css/main.css" />
+	    <style>
+	        .box { border-bottom: none;
+		       text-align: center; }
+		p { margin-bottom: .5em; 
+  		    font-size: 1.2em; }
+		hr { margin: 1em 0 1em 0;
+		     border-top: solid 2px #dddddd; }
+	    </style>
+	</head>
+
+	<body class="no-sidebar is-preload">
+	    <div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+
+		    <!-- Logo -->
+		    <h1>50 Things in Unreal Engine</h1>
+
+					
+		    <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li>
+                            <a href="games.html">Games</a>
+                            <ul>
+                              <li><a href="painted.html">Painted</a></li>
+                              <li><a href="temple.html">Temple</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="programs.html">Programs</a>
+                            <ul>
+			      <li><a href="HPUmaps.html">High Point University Maps</a></li>
+                              <li><a href="videogametracker.html">Video Game Tracker</a></li>
+                            </ul>
+                          </li>
+                          <li class="current"><a href="UE5challenge.html">Unreal Engine Challenge</a></li>
+                          <li><a href="about.html">About Me</a></li>
+                        </ul>
+                    </nav>
+					
+                </section>
+
+		<!-- Main -->
+		<section id="main">
+                    <div class="container">
+					
+		    <!-- Content -->
+		    <article class="box post">
+	
+		        <a href="UE5challenge.html" class="image featured"><img src="images/DesertBanner.png" alt="Painted Game" /></a>	
+				
+			<!-- Introduction -->
+			<div class="row aln-middle aln-center">
+			    <div class="col-6 col-6-medium col-12-small">
+			        <section class="box">
+				    <h2>Introduction</h2>
+			            <br>
+                                    <p>This summer (2022), I decided to take the opportunity to challenge myself and expand
+				       my knowledge of game design and Unreal Engine. I wrote down 50 things I wanted to learn
+				       how to create and took on each, one thing at a time.</p> 
+			        </section>
+			    </div>
+			</div>
+			<hr>
+
+
+			<!-- Overview -->
+			<div class="row aln-middle">
+			    <div class="col-6 col-6-medium col-12-small">
+				<section class="box">
+				    <h2>Overview</h2>
+			            <br>
+                                    <p>This page will go through each and every item on my list, showcasing what the outcome was.</p>
+				    <p>**<strong>Note</strong>**</p>
+				    <p>Many of these items that I learned came from different tutorials on YouTube and were
+				       re-created in my own projects for learning purposes. In order to make them more my own,
+				       I tried to take different design strategies and updage them past the tutorial.</p> 
+				</section>
+			    </div>
+			    <div class="col-6 col-6-medium col-12-small">
+				<section class="box">
+				    <img src="images/UnrealEngineLogo.png" alt="Unreal Engine Logo">
+				</section>
+			    </div>
+			</div>
+			<hr>		
+
+
+			<!-- #1 - Inventory System -->
+			<div class="row aln-middle">
+			    <div class="col-6 col-6-medium col-12-small">
+				<section class="box">
+				    <img src="images/InventorySystem.png" alt="Inventory System">
+				</section>
+			    </div>
+			    <div class="col-6 col-6-medium col-12-small">
+			        <section class="box">
+				    <h2>#1 - Inventory System</h2>
+			            <br>
+				    <ul>
+				      <li><p>An inventory system that works with a database of items, each based on a struct of variables</p></li>
+				      <li><p>System takes into account if an item is stackable as well as the max stack if true</p></li>
+				      <li><p>Works by an actor component attached to each blueprint and requires a max size for the inventory</p></li>
+				      <li><p>UI knows whether to open up just the player's inventory or a double inventory for moving items 
+					     between inventories</p></li>
+				    </ul>
+			        </section>
+			    </div>
+			</div>
+			<hr>
+
+
+                        <!-- #2 - Dynamic Footsteps -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#2 - Dynamic Footsteps</h2>
+                                    <br>
+				    <ul>
+				      <li><p>Depending on the surface the character walks on, different sounds will play</p></li>
+				      <li><p>Makes use of physical surfaces and materials to recognize the surface</p></li>
+				      <li><p>Each surface has a different number of footstep sounds to avoid repetition</p></li>
+				    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/DynamicFootstep.png" alt="Dynamic Footsteps">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #3 - Slow Motion -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/SlowMotion.png" alt="Slow Motion">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#3 - Slow Motion</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Added slow motion to work 2 different ways</p></li>
+                                      <li><p>If set up as seen in the picture, everything in the world will be set to .5 speed,
+					     but the player will be at normal speed</p></li>
+                                      <li><p>If the last 2 nodes on each path of the Flip Flop are disconnected, everything
+					     including the player will be at .5 speed</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #4 - Change Perspective -->
+                        <div class="row aln-middle aln-center">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#4 - Change Perspective</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>First, a second camera was set up on the character so that it may switch to first-person</p></li>
+                                      <li><p>When the "ChangePerspective" button is pressed, it checks to see if the third-person camera
+					     is active and will set the correct camera to active</p></li>
+                                    </ul>
+				    <br>
+				    <img src="images/ChangePerspective.png" alt="Change Perspective">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #5 - Ragdoll Effect -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Ragdoll.png" alt="Ragdoll Effect">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#5 - Ragdoll Effect</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>When the player collides with a certain object, the mesh is launched</p></li>
+                                      <li><p>After a couple of seconds, they return to a normal state</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #6 - Cascade Particles -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#6 - Cascade Particles</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Using the Cascade particle system, I was able to create different particle effects like
+					     the fireball seen to the right</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/CascadeFireball.png" alt="Cascade Fireball">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #7 - Stylized Mouse Cursor -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+				    <img src="images/CursorInGame.png" alt="Cursor In-Game">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#7 - Stylized Mouse Cursor</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>By using a widget of an image, I was able to set my mouse cursor in-game
+					     using software cursors in the project settings</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #8 - Camera Shake -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#8 - Camera Shake</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Using the "Perlin Noise" pattern, I tested various combinations to achieve the effects
+					     I wanted</p></li>
+                                      <li><p>I then wrote notes on the different outcomes of these combinations</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/CameraShakeNotes.png" alt="Camera Shake Notes">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #9 - Ability System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/AbilitySystem.png" alt="Ability System">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#9 - Ability System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>A system that has various abilities the player can choose from</p></li>
+                                      <li><p>Each one has its own animation, cast time, and cooldown</p></li>
+                                      <li><p>Ultilized Cascade to create the effects</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #10 - Sprint/Crouch -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#10 - Sprint/Crouch</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Gave the player the ability to crouch and sprint</p></li>
+                                      <li><p>The sprint not only increases the speed but also decreases a stamina bar</p></li>
+                                      <li><p>After stopping the sprint, the player slowly regains that stamina</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/SprintBar.png" alt="Sprint Bar">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #11 - AI Walking -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/AIwalk.png" alt="AI Walking">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#11 - AI Walking</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Utilizing the behavior tree, an NPC is able to wander around the level</p></li>
+                                      <li><p>It will choose a random location after each movement and move to that location</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #12 - AI Perception -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#12 - AI Perception</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Building upon the basic movement of the NPC, if it sees the player, it will chase them</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/AIchase.png" alt="AI Chase">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #13 - Setting up a scene -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/DesertCropped.png" alt="Desert Scene">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#13 - Setting up a Scene</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Set up a desert scene using assets from Quixel Bridge</p></li>
+                                      <li><p>Utilized the Sky Light, Sky Atmosphere, and Atmospheric Fog to get the 
+					     desired effect</p></li>
+                                      <li><p>Piloted a Cine Camera Actor to maintain the correct angle while placing objects</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #14 - Health Bar UI -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#14 - Health Bar UI</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Set up a HUD for the player that shows their current health as a progress bar</p></li>
+                                      <li><p>Made the progress bar look stylized and changed how it moved</p></li>
+                                      <li><p>Decided to go with a fish tank rather than traditionally styled health bar</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/FishTankHealth40.PNG" alt="Fish Tank Health 40">
+				    <img src="images/FishTankHealth100.PNG" alt="Fish Tank Health 100">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #15 - Switching Characters -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/CharacterF.PNG" alt="Character F">
+				    <img src="images/CharacterM.PNG" alt="Character M">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#15 - Switching Characters</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Set up 2 different ways:</p></li>
+                                      <li><p>1. When pressing the "switch character" button, the mesh and animations of the player
+					     character will change</p></li>
+                                      <li><p>2. When pressing the buttom, the player will posses a different character in the level</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #16 - Health System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#16 - Health System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Gave the player a total health amount and created blueprints to deal damage or heal</p></li>
+                                      <li><p>Utilized a blueprint interface to change the stats of the player character</p></li>
+                                      <li><p>Used the construction script to change the platform's text and color when the amount
+					     to deal to the character is input</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/HealthStations.png" alt="Health Stations">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #17 - Taking In-Game Screenshots -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/ScreenshotConsoleCommand.png" alt="Screenshot Command">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#17 - Taking In-Game Screenshots</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>When the "screenshot" button is pressed, a console command executes</p></li>
+                                      <li><p>A picture is saved to the "saved" folder in the project files</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #18 - Function Libraries -->
+                        <div class="row aln-middle aln-center">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#18 - Function Libraries</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Used a function library to make it easier to change the input mode</p></li>
+                                      <li><p>Utilized the different functions in multiple different blueprints and widgets</p></li>
+                                    </ul>
+				    <br>
+				    <img src="images/FunctionLibrary.png" alt="Function Library">
+                                </section>
+                            </div> 
+                        </div>
+                        <hr>
+
+
+                        <!-- #19 - Upgrading Player Stats -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/MaxHealthBox.png" alt="Health Box">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#19 - Upgrading Player Stats</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Created blueprints to increase/decrease the player's stats</p></li>
+                                      <li><p>Utilized a blueprint interface to go into the player character and set their max 
+					     health or speed to a new amount</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #20 - Settings Menu -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#20 - Settings Menu</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Created a settings widget that gets pulled up when the player presses the 
+					     appropriate button</p></li>
+                                      <li><p>Allows them to change screen resolution, texture quality, frame rate limit, and more</p></li>
+                                      <li><p>Also includes an "optimal" button to run a benchmark test and apply the best settings 
+					     for the computer</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/OptionsScreen.png" alt="Options Screen">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #21 - Save Settings -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/SaveSettings.png" alt="Save Settings">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#21 - Save Settings</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Improving upon the settings menu, included a save functionality to remember
+					     settings on future playthroughs</p></li>
+                                      <li><p>Loads every setting to what in the save</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #22 - Day/Night System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#22 - Day/Night System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Created a system that will change the sun's direction as the game is played</p></li>
+                                      <li><p>When the sun hits a certain point, the sky is changed to night or day</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/DaySky.png" alt="Day Sky">
+                                    <img src="images/NightSky.png" alt="Night Sky">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #23 - Save Game State -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/SaveGame.png" alt="Save Game">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#23 - Save Game State</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Save Game system incorporated into the inventory system noted at the top of the page</p></li>
+                                      <li><p>Saves all of the items in the player's inventory as well as items in chests</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #24 - Grab Mechanic -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#24 - Grab Mechanic</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Allows the player to pick up different items and place them back down</p></li>
+                                      <li><p>Uses a physics constraint component to interact with the different items</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/GrabMechanic.png" alt="Grab Mechanic">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #25 - Enumerations -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/CustomCharEnum.png" alt="Enumerations">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#25 - Enumerations</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Utilized enumerations to find and describe different character states</p></li>
+                                      <li><p>Created a switch on the default movement mode enumeration as well as a custom enum</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #26 - Placing Foliage -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#26 - Placing Foliage</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Using the foliage mode and downloaded assets from Quixel Bridge, learned 
+					     the ins and outs of placing foliage on a level</p></li>
+                                      <li><p>Made use of size ranges, density, different tools, and more</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Foliage.png" alt="Foliage">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #27 - Drag and Drop Operation -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/DragAndDrop.png" alt="Drag and Drop Operation">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#27 - Drag and Drop Operation</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Building off of the inventory system, implemented a drag and drop operation</p></li>
+                                      <li><p>Allows the player to drag items between inventories</p></li>
+                                      <li><p>Includes a small icon of the item held as the player moves their mouse</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #28 - Dynamic Input Mode -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#28 - Dynamic Input Mode</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Allows the player to switch between input modes freely</p></li>
+                                      <li><p>Game only allows them to run around like normal</p></li>
+                                      <li><p>Game and UI allows the player to still walk around but also interact with
+					     different aspects of the HUD</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/UIMode.png" alt="Dynamic Input Mode">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- #29 - Fall Damage -->
+                        <div class="row aln-middle aln-center">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#29 - Fall Damage</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Working with the health system implemented earlier, the player takes damage
+					     when falling from a certain height</p></li>
+                                      <li><p>Uses the Event On Landed to get the velocity and computes it to a float value 
+					     to damage the player</p></li>
+                                    </ul>
+				    <br>
+				    <img src="images/FallDamage.png" alt="Fall Damage">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #30 - Moving Along a Spline -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#30 - Moving Along a Spline</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>A blueprint that moves along a certain path as long as the player is close enough</p></li>
+                                      <li><p>Acts like a "guide" leading the player to wherever the designer chooses</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Spline.png" alt="Spline">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #31 - Respawning at Safe Location -->
+                        <div class="row aln-middle aln-center">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#31 - Respawning at a Safe Location</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Every couple of seconds, an event is called that checks to see if the 
+					     player is currently falling</p></li>
+                                      <li><p>If false, a variable is set that determines where that player will respawn when killed</p></li>
+                                    </ul>
+				    <br>
+				    <img src="images/SafeLocation.png" alt="Safe Location">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #32 - Keypad to Open Door -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#32 - Keypad to Open Door</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Uses a widget included in a door blueprint that takes a certain combination</p></li>
+                                      <li><p>If the combination is correct, the door is opened, otherwise it resets</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Keypad.png" alt="Keypad">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #33 - Hold Input -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/HoldInput.png" alt="Hold Input">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#33 - Hold Input</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Allows the player to hold down a certain button to accomplish a task</p></li>
+                                      <li><p>This example uses a test bush that after holding down an input, a certain
+					     amount of berries are collected</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #34 - AI Find Location -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#34 - AI Find Location</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Created for an in-development restaurant game, spawns a certain amount of AI 
+					     every few seconds at a certain time of day</p></li>
+                                      <li><p>Once spawned, the AI finds a specific "table" (for now just a chair) and stands by it</p></li>
+                                      <li><p>After a specific period of time, the AI walks away and despawns</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/AIspawn.png" alt="AI Find Location">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #35 - Cooking System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/CookingSystem.png" alt="Cooking System">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#35 - Cooking System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>A cooking station blueprint pulls up a widget allowing the player to create a basic meal</p></li>
+                                      <li><p>Players can see the required ingredients and how many they have</p></li>
+                                      <li><p>Pressing the button will show a progress bar that once completed, will give the player 
+					     the meal</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #36 - Importing a Landscape -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#36 - Importing a Landscape</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Used a heightmap found online and changed the image size to match one listed
+					     on Unreal Engine's Landscape Technical Guide</p></li>
+                                      <li><p>Imported the file into Unreal Engine and adjusted the z value on its scale to
+					     reduce the dramatic slopes of the mountains</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/FixedHeightmap.png" alt="Heightmap">
+				    <img src="images/Landscape.png" alt="Landscape">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #37 - Building System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/BuildingSystem.png" alt="Building System">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#37 - Building System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Allows the player to place objects similar to Fortnite's editing mode</p></li>
+                                      <li><p>Walls and other objects are placed on a grid to prevent overlap</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #38 - Double Jump -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#38 - Double Jump</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Utilizing the setting in the character movement component, the number of jumps the
+					     player could do was changed</p></li>
+                                      <li><p>Also utilized the max jump hold time to allow players to hold the jump button to go
+					     higher</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Jumping.png" alt="Double Jump">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #39 - Grappling Hook -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/GrapplingHook.png" alt="Grappling Hook">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#39 - Grappling Hook</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Implemented a grappling hook for the character that allows them to swing from
+					     different objects</p></li>
+                                      <li><p>Can set it to only attach to certain things or everything</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #40 - Water System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#40 - Water System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Using the water plugin for Unreal Engine, tested various bodies of water and 
+					     the settings within them</p></li>
+                                      <li><p>Also tested buoyancy objects to float in those bodies of water</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/WaterSystem.png" alt="Water System">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #41 - Pushing Objects -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/PushCube.png" alt="Push Object">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#41 - Pushing Objects</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Within a blueprint containing a static mesh cube, I added a physics constraint
+					     as well as 2 box collisions for the x and y axis</p></li>
+                                      <li><p>The swinging and twisting motions were locked to prevent the cube from moving in 
+					     any other direction</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #42 - Checkpoint System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#42 - Checkpoint System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Created a miniature course the player has to jump up to reach a certain "checkpoint"</p></li>
+                                      <li><p>The checkpoint blueprint saves the player's respawn point when stepped on</p></li>
+                                      <li><p>If the player fails and dies, they will respawn on that checkpoint</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Checkpoint.png" alt="Checkpoint">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #43 - Hotbar -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Hotbar.png" alt="Hotbar">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#43 - Hotbar</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Working with the same inventory system implemented earlier, a second inventory component was
+					     added to the player's hud</p></li>
+                                      <li><p>This inventory can hold items just like the regular inventory but has a smaller max size</p></li>
+                                      <li><p>The hotbar stays on the player's HUD as opposed to the toggle-able main inventory</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #44 - Fast Travel -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#44 - Fast Travel</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Using a very basic UI for the "map", the player can click on 4 different fast travel 
+					     locations</p></li>
+                                      <li><p>When they click on one of these locations, the player can select the "fast travel"
+					     button and be teleported there</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/FastTravel.png" alt="Fast Travel">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #45 - Farming System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Farming1.png" alt="Farming System">
+				    <img src="images/Farming2.png" alt="Farming System 2">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#45 - Farming System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Allows the player to select a certain seed to plant when interacting with a plot of dirt</p></li>
+                                      <li><p>Each seed has different grow time and will update the mesh every x seconds as it grows</p></li>
+                                      <li><p>Images are of a test plant that changes the material as it grows</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #46 - New Modeling Mode -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#46 - New Modeling Mode</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Explored the new modeling mode in Unreal Engine 5</p></li>
+                                      <li><p>Utilized this mode to create various static meshes</p></li>
+                                      <li><p>Sculpted meshes to create new and complex shapes</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/SculptingTest.png" alt="New Modeling Mode">
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #47 - Item Inspection -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <img src="images/Inspect.png" alt="Item Inspection">
+                                </section>
+                            </div>
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#47 - Item Inspection</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Allow the player to pick up and look at a held item</p></li>
+                                      <li><p>Pulls up a menu of button options and a description</p></li>
+                                      <li><p>Lets player rotate and move the item</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #48 - Dialogue System -->
+                        <div class="row aln-middle">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#48 - Dialogue System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>A system that implements text bubbles for dialogue with NPCs</p></li>
+                                      <li><p>Allows for multiple responses and different outcomes for each</p></li>
+                                    </ul>
+                                </section>
+			    </div>
+			    <div class="col-6 col-6-medium col-12-small">
+				<section class="box">
+				    <img src="images/Dialogue.png" alt="Dialogue System">
+				</section>
+			    </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #49 - Quest System -->
+                        <div class="row aln-middle aln-center"> 
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#49 - Quest System</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>Allows players to collect different quests</p></li>
+                                      <li><p>Includes widget to pull up accepted quests</p></li>
+				      <li><p>Knows when to complete certain quests</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <!-- #50 - Minimap -->
+                        <div class="row aln-middle aln-center">
+                            <div class="col-6 col-6-medium col-12-small">
+                                <section class="box">
+                                    <h2>#50 - Minimap</h2>
+                                    <br>
+                                    <ul>
+                                      <li><p>A widget that shows the character's location on the map within a certain radius</p></li>
+                                      <li><p>Also includes other important landmarks</p></li>
+                                    </ul>
+                                </section>
+                            </div> 
+                        </div>
+
+
+		    </article> 
+
+		    </div>
+		</section>
+			
+
+	        <!-- Footer -->
+                <section id="footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 col-6-medium col-12-small">
+                                        <section>
+                                            <header>
+                                                <h2>Quick Links Pages</h2>
+                                            </header>
+                                            <ul class="divided">
+                                                <li><a href="games.html">Games</a></li>
+                                                <li><a href="programs.html">Programs</a></li>
+                                                <li><a href="UE5challenge.html">2022 Unreal Engine Challenge</a></li>
+                                                <li><a href="about.html">About Me</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <div class="col-4 col-6-medium col-12-small">
+                                        <section>
+                                            <header>
+                                                <h2>Quick Links Projects</h2>
+                                            </header>
+                                            <ul class="divided">
+                                                <li><a href="painted.html">Painted</a></li>
+                                                <li><a href="videogametracker.html">Video Game Tracker</a></li>
+                                                <li><a href="HPUmaps.html">High Point University Maps App</a></li>
+                                                <li><a href="temple.html">Temple</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+				    <div class="col-4 col-12-medium">
+                                        <section>
+                                            <header>
+                                                <h2>Contact Me</h2>
+                                            </header>
+                                            <ul class="social">
+                                                <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/tcschmitt/"><span class="label">LinkedIn</span></a></li>
+                                                <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                                            </ul>
+                                            <ul class="contact">
+                                              <li>
+                                                <h3>Mail</h3>
+                                                <p><a href="mailto:tylercschmitt@gmail.com">tylercschmitt@gmail.com</a></p>
+                                              </li>
+                                              <li>
+                                                <h3>Phone</h3>
+                                                <p>(401) 871-0976</p>
+                                              </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <div class="col-12">
+				        
+					<!-- Copyright -->
+                                        <div id="copyright">
+                                            <ul class="links">
+                                              <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                </div>
+		
+		<!-- Scripts -->
+                        <script src="assets/js/jquery.min.js"></script>
+                        <script src="assets/js/jquery.dropotron.min.js"></script>
+                        <script src="assets/js/browser.min.js"></script>
+                        <script src="assets/js/breakpoints.min.js"></script>
+                        <script src="assets/js/util.js"></script>
+                        <script src="assets/js/main.js"></script>
+
+				            
+        </body>
+</html>

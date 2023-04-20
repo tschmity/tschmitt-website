@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	    <title>Video Game Tracker</title>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	    <link rel="stylesheet" href="assets/css/main.css" />
+	    <style>
+	        .box { border-bottom: none;
+		       text-align: center; }
+		p { margin-bottom: .5em; 
+  		    font-size: 1.2em; }
+		hr { margin: 1em 0 1em 0;
+		     border-top: solid 2px #dddddd; }
+	    </style>
+	</head>
+
+	<body class="no-sidebar is-preload">
+	    <div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+
+		    <!-- Logo -->
+		    <h1>Video Game Tracker App</h1>
+
+					
+		    <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li>
+                            <a href="games.html">Games</a>
+                            <ul>
+                              <li><a href="painted.html">Painted</a></li>
+                              <li><a href="temple.html">Temple</a></li>
+                            </ul>
+                          </li>
+                          <li class="current">
+                            <a href="programs.html">Programs</a>
+                            <ul>
+                              <li><a href="HPUmaps.html">High Point University Maps</a></li> 
+                              <li><a href="videogametracker.html">Video Game Tracker</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="UE5challenge.html">Unreal Engine Challenge</a></li>
+                          <li><a href="about.html">About Me</a></li>
+                        </ul>
+                    </nav>
+					
+                </section>
+
+		<!-- Main -->
+		<section id="main">
+                    <div class="container">
+					
+		    <!-- Content -->
+		    <article class="box post">
+	
+		        <a href="painted.html" class="image featured"><img src="images/MapsActivity1Banner.png" alt="Maps Activity Code" /></a>	
+
+
+			<!-- Introduction -->
+			<div class="row aln-middle">
+			    <div class="col-6 col-6-medium col-12-small">
+			        <section class="box">
+				    <br>
+				    <h2>Introduction</h2>
+			            <br>
+				    <p>This app was made to make it easier to keep track of video games you have completed
+				       and was the first solo project in Android Studio I have done</p>
+			        </section>
+			    </div>
+			    <div class="col-6 col-6-medium col-12-small">
+				<section class="box">
+				    <br>
+				    <h2>Fragments</h2>
+				    <br>
+				    <p>There are 3 fragments for different pages inside the app: Home, Search, and Profile.
+				       Uses a bottomNavigationView to easily switch between the 3.</p>
+				</section>
+			    </div>
+			</div>
+			<hr>
+
+
+			<!-- Home Fragment -->
+			<div class="row aln-middle aln-center"> 
+			    <div class="col-6 col-6-medium col-12-small">
+				<section class="box">
+				    <h2>Home Fragment</h2>
+			            <br>
+                                    <p>The main fragment "Home" lists 5 hard-coded games in a Recycler View. Each item
+				       in the list has the games's title and an image to represent it. The user is able to
+				       scroll down the list as well.</p>
+				</section>
+			    </div>
+			    <div class="col-6 col-6-medium col-12-small">
+			 	<section class="box">
+				    <img src="images/videogameapp.png" alt="Home Fragment app">
+				</section>
+			    </div>
+			</div>
+			<hr>		
+
+
+			<!-- Item Click -->
+			<div class="row aln-middle">
+			    <div class="col-6 col-6-medium col-12-small">
+				<section class="box">
+				    <video width="484" height="348" controls>
+				      <source src="videos/OnClickItem.mp4" type="video/mp4">
+				    </video>
+				</section>
+			    </div>
+			    <div class="col-6 col-6-medium col-12-small">
+			        <section class="box">
+				    <h2>Item Click</h2>
+			            <br>
+				    <p>Each item on the home screen has an on-click event that opens up a new activity with more
+ 				       information on that specific game. The game's data is held in a "game" class, and when 
+				       clicked, that information is passed to the new activity. The new page also includes a button
+                                       to add the game to the user's personal list</p>
+			        </section>
+			    </div>
+			</div>	
+
+		    </article> 
+
+		    </div>
+		</section>
+			
+
+	        <!-- Footer -->
+                <section id="footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 col-6-medium col-12-small">
+                                        <section>
+                                            <header>
+                                                <h2>Quick Links Pages</h2>
+                                            </header>
+                                            <ul class="divided">
+                                                <li><a href="games.html">Games</a></li>
+                                                <li><a href="programs.html">Programs</a></li>
+                                                <li><a href="UE5challenge.html">2022 Unreal Engine Challenge</a></li>
+                                                <li><a href="about.html">About Me</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <div class="col-4 col-6-medium col-12-small">
+                                        <section>
+                                            <header>
+                                                <h2>Quick Links Projects</h2>
+                                            </header>
+                                            <ul class="divided">
+                                                <li><a href="painted.html">Painted</a></li>
+                                                <li><a href="videogametracker.html">Video Game Tracker</a></li>
+                                                <li><a href="HPUmaps.html">High Point University Maps App</a></li>
+                                                <li><a href="temple.html">Temple</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+				    <div class="col-4 col-12-medium">
+                                        <section>
+                                            <header>
+                                                <h2>Contact Me</h2>
+                                            </header>
+                                            <ul class="social">
+                                                <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/tcschmitt/"><span class="label">LinkedIn</span></a></li>
+                                                <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                                            </ul>
+                                            <ul class="contact">
+                                              <li>
+                                                <h3>Mail</h3>
+                                                <p><a href="mailto:tylercschmitt@gmail.com">tylercschmitt@gmail.com</a></p>
+                                              </li>
+                                              <li>
+                                                <h3>Phone</h3>
+                                                <p>(401) 871-0976</p>
+                                              </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <div class="col-12">
+				        
+					<!-- Copyright -->
+                                        <div id="copyright">
+                                            <ul class="links">
+                                              <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                </div>
+		
+		<!-- Scripts -->
+                        <script src="assets/js/jquery.min.js"></script>
+                        <script src="assets/js/jquery.dropotron.min.js"></script>
+                        <script src="assets/js/browser.min.js"></script>
+                        <script src="assets/js/breakpoints.min.js"></script>
+                        <script src="assets/js/util.js"></script>
+                        <script src="assets/js/main.js"></script>
+
+				            
+        </body>
+</html>
