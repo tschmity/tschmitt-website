@@ -107,45 +107,53 @@
 			<hr>		
 
 
-			<!-- Gameplay Mechanics -->
+			<!-- AI -->
 			<div class="row aln-middle">
 			    <div class="col-6 col-6-medium col-12-small">
 			        <section class="box">
 				    <h2>AI</h2>
 			            <br>
 				    <ul>
-				      <li><p>As the AI programmer, it was my job to create AI that not only </p></li>
-				      <li><p>Input a specific code into a keypad to turn off the set of lasers</p></li>
-				      <li><p>Click on statues to pick them up, when placed on the correct podium, they will
-					     snap into place</p></li>
+				      <li><p>As the AI programmer, it was my job to create AI that not only acted realisic, but also
+						     react to their surroundings accordingly
+					  </p></li>
+				      <li><p>Each robot uses a behavior tree to determine their actions, by default they will
+						     walk around assigned patrol points placed around the map.
+					  </p></li>
+				      <li><p>They will react to sound and sight, with sight filling a bar above the players head.
+						     The bar will fill faster the closer the player is to the robot and once filled, will chase them.   
+					  </p></li>
 				    </ul>
 			        </section>
 			    </div>
 			    <div class="col-6 col-6-medium col-12-small">
 				<section class="box">
-				    <img src="images/VioletRobots.PNG" alt="Painted Game" width="400px">
+				    <img src="images/VioletRobots.PNG" alt="Painted Game" width="450px">
 				</section>
 			    </div>
 			</div>
 			<hr>
 
 
-			<!-- Audio Design -->
+			<!-- Scan -->
 			<div class="row aln-middle">
 			    <div class="col-6 col-6-medium col-12-small">
 				<section class="box">
-				    <img src="images/VioletScan.PNG" alt="Painted Game" width="400px">
+				    <img src="images/VioletScan.PNG" alt="Painted Game" width="450px">
 				</section>
 			    </div>
 			    <div class="col-6 col-6-medium col-12-small">
 				<section class="box">
-				    <h2>Audio Design</h2>
+				    <h2>Scan</h2>
 			            <br>
 				    <ul>
-				      <li><p>Sound cue plays random footstep every time the character's foot hits the ground</p></li>
-				      <li><p>Lowered the pitch of an old airplane flying to give off the "hum" of a laser wall</p></li>
-				      <li><p>Separate sound cues for each time a statue is picked up/dropped on the ground and
-					     snapped into place</p></li>
+				      <li><p>A problem that we ran into is that players had a hard time finding what objects they needed to/could interact
+						     with in each level.
+					  </p></li>
+				      <li><p>To fix this, I added a post process material that would increase in size when the player pressed their scan
+						     ability.
+					  </p></li>
+				      <li><p>A trace would follow the material and tell any objects that <em>could</em> highlight to highlight a certain color.</p></li>
 				    </ul>
 				</section>
 			    </div>
@@ -153,21 +161,20 @@
 			<hr>
 
 
-			<!-- Problem #1 -->
+			<!-- Throw -->
 			<div class="row aln-middle">
 			    <div class="col-6 col-6-medium col-12-small">
 			        <section class="box">
-				    <h2>Problem #1</h2>
+				    <h2>Throw</h2>
 			            <br>
-				    <p><strong>Problem: </strong>Players needed a better way to see the sticky notes scattered
-								 around the museum.</p>
-				    <p><strong>Solution: </strong>Utilizing the sphere trace already implemented, added a blueprint 
-  								  that would pull up a UI widget of the note when interacted with.</p>
+				    <p><strong>Problem: </strong>Players could not effectively use the throw mechanic to distract guards.</p>
+				    <p><strong>Solution: </strong>I added a prediction path for the throw mechanic so that players could 
+					                              aim where they wanted and accurately throw the gear.</p>
 			        </section>
 			    </div>
 			    <div class="col-6 col-6-medium col-12-small">
 				<section class="box">
-				    <img src="images/VioletThrow.PNG" alt="Painted Game" width="400px">
+				    <img src="images/VioletThrow.PNG" alt="Painted Game" width="450px">
 				</section>
 			    </div>
 			</div>
