@@ -1,11 +1,7 @@
 // Tyler Schmitt 
 // csc-1710
 // 4-8-21
-// ~/csc1710/prog3/hangman.cpp
 // A program that picks a word out of a text file of words and uses it for a hangman game 
-
-// For my program I chose to do all of the "Grade A" options, along with BONUS2 (ASCII picture) and BONUS3 (data file)
-// for a max grade of 100
 
 #include <iostream>
 #include <string>
